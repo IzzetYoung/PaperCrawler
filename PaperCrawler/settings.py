@@ -60,11 +60,19 @@ ROBOTSTXT_OBEY = True
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
+# Download config
+FILES_STORE = '../Papers'
+FILES_URLS_FIELD = 'url'
+DOWNLOAD_DELA = 5
+DOWNLOAD_TIMEOUT = 100
+CONCURRENT_REQUESTS_PER_DOMAIN = 5
+CONCURRENT_REQUESTS_PER_IP = 5
+
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'PaperCrawler.pipelines.PapercrawlerPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'PaperCrawler.pipelines.PaperDownloadPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
