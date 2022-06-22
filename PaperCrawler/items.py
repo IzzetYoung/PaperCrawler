@@ -6,7 +6,10 @@
 import scrapy
 
 
-class PapercrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class PaperItem(scrapy.Item):
+    title = scrapy.Field()
+    conference = scrapy.Field()
+    year = scrapy.Field()
+    level = scrapy.Field()
+    url = scrapy.Field()
+
