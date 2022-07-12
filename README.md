@@ -33,6 +33,6 @@ Upload the crawlers of ICLR, ICML and NeurIPS from 2018 to 2021
 
 ## TODO
 
-- [ ] Upload the crawlers of AAAI and IJCAI
+- [ ] Upload the crawlers of AAAI, IJCAI, SIGIR, WWW and SIGKDD
 - [ ] Splitting out individual conference crawlers from the ACL series and TACL series
 - [ ] Add a year parameter to download conference papers for a particular year separately
